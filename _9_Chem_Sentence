@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 class Solution
 {
-  static String sen;
+  	static String sen;
 	static boolean isAns=false;
 	static HashMap map;
 	
@@ -33,8 +33,8 @@ class Solution
 	public static void main(String args[]) throws Exception	
 	{
 		int T;
-    int test_case;
-  	Scanner sc = new Scanner(System.in);
+		int test_case;
+  		Scanner sc = new Scanner(System.in);
 		map = new HashMap();
 		for(int i=0; i<ce.length; i++)
 		  map.put(ce[i], ce[i]);
@@ -76,12 +76,10 @@ class Solution
 		{	
 			if(curIdx+wLen>sen.length()-1) 
 				return; 
-			
-			
+				
 			else if(curIdx+wLen==sen.length()-1)
 			{
 				tmp = sen.substring(curIdx, curIdx+wLen+1);
-				
 				if(map.containsKey(tmp))
 				{
 					isAns=true;
